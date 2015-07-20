@@ -9,7 +9,7 @@ class autofs {
       content => template('autofs/autofs.service.erb'),
       owner   => 'root',
       group   => 'root',
-      mode    => "0622",
+      mode    => "0644",
       notify  => [ Service['autofs'], Exec['autofs-systemctl-daemon-reload'] ],
     }
     exec { 'autofs-systemctl-daemon-reload':
