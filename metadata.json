@@ -1,0 +1,14 @@
+{
+  "name": "sfu-rcg-autofs",
+  "version": "0.1.0",
+  "author": [ "dwarren", "asasfu" ],
+  "summary": "Module for managing autofs on different linux systems",
+  "description": "This module will manage autofs package and server for different linux systems, fixing service files in some cases to be a little better for autofs with SSSD from ldap or AD",
+  "license": "Apache 2.0",
+  "source": "https://github.com/sfu-rcg/puppet-autofs",
+  "project_page": "",
+  "issues_url": "",
+  "dependencies": [
+  ]
+}
+
