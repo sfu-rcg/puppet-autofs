@@ -1,6 +1,6 @@
 class autofs {
 
-  if $::operatingsystem == 'ubuntu' and $::operatingsystemrelease =~ /^15\.\d+$/ {
+  if $::operatingsystem == 'ubuntu' and $::operatingsystemrelease =~ /^1[56]\.\d+$/ {
     file { "/etc/init.d/autofs":
       ensure => absent
     }
