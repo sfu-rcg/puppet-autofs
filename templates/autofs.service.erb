@@ -5,7 +5,7 @@ After=network.target ypbind.service sssd.service
 [Service]
 Type=forking
 PIDFile=/run/autofs.pid
-EnvironmentFile=-/etc/sysconfig/autofs
+EnvironmentFile=-/etc/default/autofs
 ExecStart=/usr/sbin/automount $OPTIONS --pid-file /run/autofs.pid
 ExecReload=/usr/bin/kill -HUP $MAINPID
 TimeoutSec=180
